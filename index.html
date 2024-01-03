@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Validação de Entrada</title>
+</head>
+
+<body>
+  <section>
+    <form>
+      <h1>Validação de Formulário | CSS | Regex</h1>
+
+      <label>Nome</label>
+      <input type="text" pattern=".{5,}">
+      <span data-validation-text>precisa ter 5 caracteres</span>
+
+      <label>Email</label>
+      <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$">
+      <span data-validation-text>O e-mail não é valido</span>
+
+      <label>Telefone</label>
+      <input type="text" pattern="([0-9]|\s){8,}">
+      <span data-validation-text>apenas números e espaços permitidos, deve ter mais de 8 caracteres</span </form>
+      <button>Enviar</button>
+  </section>
+</body>
+
+</html>
